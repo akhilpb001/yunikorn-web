@@ -44,9 +44,9 @@ export class QueueRackComponent implements OnInit {
 
   getQueueCapacityColor(queue: QueueInfo) {
     const capacity = +queue.absoluteUsedCapacity;
-    if (capacity > 0 && capacity <= 70) {
+    if (capacity > 60 && capacity <= 80) {
       return '#60cea5';
-    } else if (capacity > 70 && capacity < 95) {
+    } else if (capacity > 80 && capacity < 95) {
       return '#ffbc0b';
     } else if (capacity >= 95) {
       return '#ef6162';
